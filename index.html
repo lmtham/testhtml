@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Widget</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f9f9f9;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to TalentClik Chat</h1>
+        <p>Our AI assistant is here to help you!</p>
+    </div>
+
+   <script src="http://localhost:8081/chat-widget.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    initChatWidget({
+      webhookUrl: 'https://n8ncloud2.onrender.com/webhook/2f82c208-de56-4c9d-8028-c5bfbe4f1428/chat',
+      headerTitle: 'Chat Room', // Optional: customize header title
+      botName: 'Ben',         // Optional: customize bot name
+      welcomeMessage: 'Welcome 👋! How can I help you today?' // Optional: customize welcome message
+    });
+  });
+</script>
+</body>
+</html>
