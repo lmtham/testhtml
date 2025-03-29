@@ -30,15 +30,10 @@
         <p>Our AI assistant is here to help you!</p>
     </div>
 
-   <script src="http://localhost:8081/chat-widget.js"></script>
+<script src="https://n8n-chat-vercel-38en5313v-lmthams-projects.vercel.app/chat-widget.js"></script>
 <script>
   window.addEventListener('DOMContentLoaded', function() {
-    initChatWidget({
-      webhookUrl: 'https://n8ncloud2.onrender.com/webhook/2f82c208-de56-4c9d-8028-c5bfbe4f1428/chat',
-      headerTitle: 'Chat Room', // Optional: customize header title
-      botName: 'Ben',         // Optional: customize bot name
-      welcomeMessage: 'Welcome 👋! How can I help you today?' // Optional: customize welcome message
-    });
+    initChatWidget('https://n8ncloud2.onrender.com/webhook/2f82c208-de56-4c9d-8028-c5bfbe4f1428/chat');
   });
 </script>
 </body>
